@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Goals } from '../goals';
 
 @Component({
   selector: 'app-goal',
@@ -6,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
+
+  goals:Goals[] = [
+    {id:1, name:'Watch finding Nemo'},
+    {id:2, name:'Buy Cookies'},
+    {id:3, name:'Buy new Phone case'},
+    {id:4, name: 'Get Dog Food'},
+    {id:5, name:'Solve math homework'},
+    {id:6, name:'Plot a world domination plan'},
+  ];
 
   constructor() { }
 
