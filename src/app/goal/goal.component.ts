@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Goals } from '../goals';
 
@@ -9,12 +10,12 @@ import { Goals } from '../goals';
 export class GoalComponent implements OnInit {
 
   goals:Goals[] = [
-    new Goals(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
-    new Goals(2, 'Buy Cookies', 'I have to buy cookies for the parrot'),
-    new Goals(3, 'Buy new Phone case', 'Diana has her birthday coming up soon'),
-    new Goals(4,  'Get Dog Food', 'Pupper likes expensive snacks'),
-    new Goals(5, 'Solve math homework', 'I love Math'),
-    new Goals(6, 'Plot a world domination plan', 'Cause I am an evil overlord. "Muhahahah"'),
+    new Goals(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2020,3,14)),
+    new Goals(2, 'Buy Cookies', 'I have to buy cookies for the parrot', new Date(2019,6,9)),
+    new Goals(3, 'Buy new Phone case', 'Diana has her birthday coming up soon', new Date(2022,1,12)),
+    new Goals(4,  'Get Dog Food', 'Pupper likes expensive snacks', new Date(2019,0,18)),
+    new Goals(5, 'Solve math homework', 'I love Math', new Date(2019,2,14)),
+    new Goals(6, 'Plot a world domination plan', 'Cause I am an evil overlord. "Muhahahah"', new Date(2030,3,14)),
   ];
 
   toggleDetails(index:any){
