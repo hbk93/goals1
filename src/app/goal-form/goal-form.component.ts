@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Goals } from '../goals';
 
 @Component({
   selector: 'app-goal-form',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./goal-form.component.css']
 })
 export class GoalFormComponent implements OnInit {
+
+  newGoal = new Goals(0,"","",new Date());
 
   constructor() { }
 
